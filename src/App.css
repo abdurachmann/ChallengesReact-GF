@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+.avatar {
+  height: 20vmin;
+  border-radius: 50%;
+}
