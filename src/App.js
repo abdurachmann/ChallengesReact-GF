@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Greeting from './Greeting';
 import Userprofile from './UserProfile';
+import Date from './Date';
 
 // function App() {
 //   return (
@@ -38,6 +39,12 @@ class App extends Component{
   render(){
     return(
       <div class="container">
+        <div class='row'>
+          <div class="col s5 offset-s7 m6 offset-m6 l4 offset-l8">
+            <Date />
+          </div>
+        </div>
+        
         <div class="row">
           <div class="col s6 offset-s3">
             <Greeting name={this.state.name} age={this.state.age} gender={this.state.gender}/>                    

@@ -7,11 +7,8 @@ class Userprofil extends Component{
     constructor(props){
         super(props);
         this.state = {
-            name: this.props.name,
-            age: this.props.age,
-            gender: this.props.gender,
-            username: '',
-            bio: ''
+            username: '@abdurachmann',
+            bio: 'Geeksfarm React'
         };
     }
 
@@ -32,7 +29,7 @@ class Userprofil extends Component{
                         <li class="collection-item avatar">
                             <Avatar />
                             <span class="title"><b><u>User Profil</u></b></span>
-                                <p><UserName username={this.state.username} />
+                                <p><UserName username={this.state.username}/>
                                 <Bio bio={this.state.bio}/>
                                 </p>
                             <a href="#!" class="secondary-content btn-floating waves-effect waves-light red"><i class="material-icons">edit</i></a>
